@@ -21,7 +21,6 @@ opti.nextPage = function () {
 } */
 // colors
 // var menuColor = "#ff0000";
-var color0 = "#ff8000";
 
 constants = [
 {
@@ -78,6 +77,10 @@ constants = [
 
 ]; // end constants
 
+var color0 = "#ff8000";
+var color1 = "#ff0000";
+var color2 = "#800000";
+
 pages = [ [ // PAGE 0
 {
     "name":"sl00",
@@ -86,13 +89,14 @@ pages = [ [ // PAGE 0
     "x":.02, "y":.13,
     "min":0,
     "max":1024,
-    "color":"#804000",
-    "stroke":"#00ff00",
-    "backgroundColor":"#004080",
+    "color":color0,
+    "stroke":color1,
+    "backgroundColor":color2,
     "midiType":"cc",
     "midiNumber":0,
     "midiMin":0,
     "midiMax":127,
+    "onvaluechange":"sl00Label.changeValue('sl00 - ' + Math.floor(this.value));",
 },
 {
     "name":"sl01",
@@ -101,12 +105,14 @@ pages = [ [ // PAGE 0
     "x":.02, "y":.23,
     "min":0,
     "max":1024,
-    "color":"#804000",
-    "stroke":"#00ff00",
+    "color":color0,
+    "stroke":color1,
+    "backgroundColor":color2,
     "midiType":"cc",
     "midiNumber":1,
     "midiMin":0,
     "midiMax":127,
+    "onvaluechange":"sl01Label.changeValue('sl01 - ' + Math.floor(this.value));",
 },
 {
     "name":"sl02",
@@ -115,12 +121,14 @@ pages = [ [ // PAGE 0
     "x":.02, "y":.33,
     "min":0,
     "max":1024,
-    "color":"#804000",
-    "stroke":"#00ff00",
+    "color":color0,
+    "stroke":color1,
+    "backgroundColor":color2,
     "midiType":"cc",
     "midiNumber":2,
     "midiMin":0,
     "midiMax":127,
+    "onvaluechange":"sl02Label.changeValue('sl02 - ' + Math.floor(this.value));",
 },
 {
     "name":"sl03",
@@ -129,13 +137,48 @@ pages = [ [ // PAGE 0
     "x":.02, "y":.43,
     "min":0,
     "max":1024,
-    "color":"#804000",
-    "stroke":"#00ff00",
+    "color":color0,
+    "stroke":color1,
+    "backgroundColor":color2,
     "midiType":"cc",
     "midiNumber":3,
     "midiMin":0,
     "midiMax":127,
+    "onvaluechange":"sl03Label.changeValue('sl03 - ' + Math.floor(this.value));",
 },
+{
+    "name":"sl00Label",
+    "type":"Label",
+    "width":.3, "height":.04,
+    "x":.05, "y":.155,
+    "align":"left",
+    "value":"sl00 - 0",
+},
+{
+    "name":"sl01Label",
+    "type":"Label",
+    "width":.3, "height":.04,
+    "x":.05, "y":.255,
+    "align":"left",
+    "value":"sl01 - 0",
+},
+{
+    "name":"sl02Label",
+    "type":"Label",
+    "width":.3, "height":.04,
+    "x":.05, "y":.355,
+    "align":"left",
+    "value":"sl02 - 0",
+},
+{
+    "name":"sl03Label",
+    "type":"Label",
+    "width":.3, "height":.04,
+    "x":.05, "y":.455,
+    "align":"left",
+    "value":"sl03 - 0",
+},
+
 
 ], // end PAGE 0
 [ // PAGE 1
