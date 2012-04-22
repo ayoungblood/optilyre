@@ -20,7 +20,8 @@ opti.nextPage = function () {
     }
 } */
 // colors
-// var menuColor = "#ff0000";
+var menuColor = "#ff0000";
+var color0 = "#ff8000";
 
 constants = [
 {
@@ -82,11 +83,12 @@ pages = [ [ // PAGE 0
     "name":"sl00",
     "type":"Slider",
     "width":.97, "height":.09,
-    "x":.02, "y":.20,
+    "x":.02, "y":.10,
     "min":0,
     "max":1024,
-    "color":"#007fff",
+    "color":color0,
     "stroke":"#00ff00",
+    "backgroundColor":"#004080";
     "midiType":"cc",
     "midiNumber":0,
     "midiMin":0,
@@ -96,10 +98,10 @@ pages = [ [ // PAGE 0
     "name":"sl01",
     "type":"Slider",
     "width":.97, "height":.09,
-    "x":.02, "y":.30,
+    "x":.02, "y":.20,
     "min":0,
     "max":1024,
-    "color":"#007fff",
+    "color":color0,
     "stroke":"#00ff00",
     "midiType":"cc",
     "midiNumber":1,
@@ -110,10 +112,10 @@ pages = [ [ // PAGE 0
     "name":"sl02",
     "type":"Slider",
     "width":.97, "height":.09,
-    "x":.02, "y":.40,
+    "x":.02, "y":.30,
     "min":0,
     "max":1024,
-    "color":"#007fff",
+    "color":color0,
     "stroke":"#00ff00",
     "midiType":"cc",
     "midiNumber":2,
@@ -124,10 +126,10 @@ pages = [ [ // PAGE 0
     "name":"sl03",
     "type":"Slider",
     "width":.97, "height":.09,
-    "x":.02, "y":.50,
+    "x":.02, "y":.40,
     "min":0,
     "max":1024,
-    "color":"#007fff",
+    "color":color0,
     "stroke":"#00ff00",
     "midiType":"cc",
     "midiNumber":3,
