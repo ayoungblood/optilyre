@@ -2,6 +2,7 @@ loadedInterfaceName = "optilyre 0";
 interfaceOrientation = "portrait";
 
 // scripting
+/* 
 opti = new Object();
 opti.page = 0;
 opti.nextPage = function () {
@@ -17,7 +18,7 @@ opti.nextPage = function () {
         opti.page = 0;
         control.changePage(0);
     }
-}
+} */
 // colors
 // var menuColor = "#ff0000";
 
@@ -32,7 +33,7 @@ constants = [
     "color":"#003040",
     "stroke":"#00bfff",
     "backgroundColor":"#003040",
-    "ontouchstart":"opti.nextPage()",
+    "ontouchstart":"control.changePage(1)",
 },
 {
     "name":"menu",
@@ -67,7 +68,7 @@ constants = [
     "label":"INFO",
     "x":.75375, "y":.01,
     "width":.23125, "height":.09,
-    "color":menuColor,
+    "color":"#0000bf",
     "stroke":"#00bfff",
     "backgroundColor":"#003040",
     "mode":"momentary",
@@ -77,7 +78,62 @@ constants = [
 ]; // end constants
 
 pages = [ [ // PAGE 0
-
+{
+    "name":"sl00",
+    "type":"Slider",
+    "width":.97, "height":.09,
+    "x":.02, "y":.20,
+    "min":0,
+    "max":1024,
+    "color":"#007fff",
+    "stroke":"#00ff00",
+    "midiType":"cc",
+    "midiNumber":0,
+    "midiMin":0,
+    "midiMax":127,
+},
+{
+    "name":"sl01",
+    "type":"Slider",
+    "width":.97, "height":.09,
+    "x":.02, "y":.30,
+    "min":0,
+    "max":1024,
+    "color":"#007fff",
+    "stroke":"#00ff00",
+    "midiType":"cc",
+    "midiNumber":1,
+    "midiMin":0,
+    "midiMax":127,
+},
+{
+    "name":"sl02",
+    "type":"Slider",
+    "width":.97, "height":.09,
+    "x":.02, "y":.40,
+    "min":0,
+    "max":1024,
+    "color":"#007fff",
+    "stroke":"#00ff00",
+    "midiType":"cc",
+    "midiNumber":2,
+    "midiMin":0,
+    "midiMax":127,
+},
+{
+    "name":"sl03",
+    "type":"Slider",
+    "width":.97, "height":.09,
+    "x":.02, "y":.50,
+    "min":0,
+    "max":1024,
+    "color":"#007fff",
+    "stroke":"#00ff00",
+    "midiType":"cc",
+    "midiNumber":3,
+    "midiMin":0,
+    "midiMax":127,
+},
 
 ], // end PAGE 0
 [ // PAGE 1
