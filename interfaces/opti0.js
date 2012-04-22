@@ -5,7 +5,7 @@ interfaceOrientation = "portrait";
 opti=new Object();
 opti.page=0;
 opti.changePage=function() {
-    if(opti.page===0) {
+    if(opti.page == 0) {
         opti.page=1;
         control.changePage(1);
     }
