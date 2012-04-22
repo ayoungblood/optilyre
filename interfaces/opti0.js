@@ -4,17 +4,29 @@ interfaceOrientation = "portrait";
 // scripting
 opti = new Object();
 opti.page = 0;
+opti.lastPage = 0;
 opti.nextPage = function() {
     if (opti.page == 2) {
         control.changePage(0);
         opti.page = 0;
+        opti.lastPage = 0;
     }
     else {
         control.changePage('next');
         opti.page++;
+        opti.lastPage++;
     }
 }
-
+opti.infoPage = function() {
+    if (opti.page == 3) {
+        control.changePage(opti.lastPage);
+        opti.page = opti.lastPage;
+    }
+    else {
+        opti.page = 3;
+        control.changePage(3);
+    }
+}
 
 constants = [
 {
@@ -66,7 +78,7 @@ constants = [
     "stroke":"#00bfff",
     "backgroundColor":"#003040",
     "mode":"momentary",
-    "ontouchstart":"control.changePage(3)",
+    "ontouchstart":"opti.infoPage()",
 },
 
 ]; // end constants
