@@ -13,6 +13,7 @@ opti.nextPage = function() {
         control.changePage('next');
         opti.page++;
     }
+    
 }
 
 constants = [
