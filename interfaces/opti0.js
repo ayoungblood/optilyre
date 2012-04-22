@@ -2,11 +2,11 @@ loadedInterfaceName = "optilyre 0";
 interfaceOrientation = "portrait";
 
 // scripting
-opti=new Object();
-opti.page=0;
-opti.changePage=function() {
-    if(opti.page == 0) {
-        opti.page=1;
+opti = new Object();
+opti.page = 0;
+opti.nextPage = function () {
+    if (opti.page == 0) {
+        opti.page = 1;
         control.changePage(1);
     }
     if (opti.page == 1) {
@@ -19,7 +19,7 @@ opti.changePage=function() {
     }
 }
 // colors
-var menuColor = "#ff0000";
+// var menuColor = "#ff0000";
 
 constants = [
 {
@@ -32,7 +32,7 @@ constants = [
     "color":"#003040",
     "stroke":"#00bfff",
     "backgroundColor":"#003040",
-    "ontouchstart":"opti.changePage()",
+    "ontouchstart":"opti.nextPage()",
 },
 {
     "name":"menu",
