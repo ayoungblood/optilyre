@@ -13,8 +13,8 @@ opti.nextPage = function() {
         control.changePage('next');
         opti.page++;
     }
-    
 }
+
 
 constants = [
 {
@@ -74,6 +74,12 @@ constants = [
 var color0 = "#ff8000";
 var color1 = "#ff0000";
 var color2 = "#800000";
+var color3 = "#b00000";
+var color4 = "#ff8000";
+var color5 = "#000080";
+var color6 = "#b00000";
+var color7 = "#ff8000";
+var color8 = "#000080";
 
 pages = [ [ // PAGE 0
 {
@@ -172,7 +178,83 @@ pages = [ [ // PAGE 0
     "align":"left",
     "value":"sl03 - 0",
 },
+{
+    "name":"sw00",
+    "type":"Button",
+    "label":"sw00",
+    "width":.23125, "height":.09,
+    "x":.015, "y":.53,
+    "color":color3,
+    "stroke":color4,
+    "backgroundColor":color5,
+},
+{
+    "name":"sw01",
+    "type":"Button",
+    "label":"sw01",
+    "width":.23125, "height":.09,
+    "x":.26125, "y":.53,
+    "color":color3,
+    "stroke":color4,
+    "backgroundColor":color5,
+},
+{
+    "name":"sw02",
+    "type":"Button",
+    "label":"sw02",
+    "width":.23125, "height":.09,
+    "x":.5075, "y":.53,
+    "color":color3,
+    "stroke":color4,
+    "backgroundColor":color5,
+},
+{
+    "name":"sw03",
+    "type":"Button",
+    "label":"sw01",
+    "width":.23125, "height":.09,
+    "x":.75375, "y":.53,
+    "color":color3,
+    "stroke":color4,
+    "backgroundColor":color5,
+},
+{
+    "name":"INIT",
+    "label":"INIT",
+    "type":"Button",
+    "width":.3133, "height":.09,
+    "x":.015, "y":.63,
+    "color":color6,
+    "stroke":color7,
+    "backgroundColor":color8,
+    "mode":"momentary",
+    
+},
+{
+    "name":"FOO",
+    "label":"FOO",
+    "type":"Button",
+    "width":.3133, "height":.09,
+    "x":.3433, "y":.63,
+    "color":color6,
+    "stroke":color7,
+    "backgroundColor":color8,
+    "mode":"momentary",
 
+},
+{
+    "name":"BAR",
+    "label":"BAR",
+    "type":"Button",
+    "width":.3133, "height":.09,
+    "x":.6716, "y":.63,
+    "color":color6,
+    "stroke":color7,
+    "backgroundColor":color8,
+    "mode":"momentary",
+
+
+},
 
 ], // end PAGE 0
 [ // PAGE 1
