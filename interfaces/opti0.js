@@ -486,9 +486,19 @@ pages = [ [ // PAGE 0
 ], // end PAGE 2
 [ // PAGE 3, INFO
 {
-    "name":"infoText",
+    "name":"infoText0",
     "type":"Label",
     "x":.0625, "y":.13,
+    "width":.875, "height":.4,
+    "align":"left",
+    "verticalCenter":false,
+    "value":"The first four sliders on page 0 transmit MIDI CC from CC0 to CC3, with a range of 0-127.<br /> They also transmit OSC messages on sl00 to sl03 inclusively, with a range of 0-1023.",
+    
+},
+{
+    "name":"infoText1",
+    "type":"Label",
+    "x":.0625, "y":.53,
     "width":.875, "height":.4,
     "align":"left",
     "verticalCenter":false,
