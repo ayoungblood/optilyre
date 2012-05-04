@@ -5,7 +5,7 @@
  * Note that it takes 100 microseconds to read an ADC, so max frequency is 10kHz
  */
 
-int threshold = 0;
+int threshold = 512;
 int inputs[] = {A0,A1,A2,A3,A4,A5,A6};
 
 void setup() {
@@ -15,9 +15,11 @@ void setup() {
 void loop() {
   for (int i=0; i<6; i++) {
     if (analogRead(inputs[i]) > threshold) {
-      
-      // foo
+      Serial.print(i);
+      Serial.print(" >> ");
+      Serial.println(analogRead(inputs[i]));
       
     }
   }
+  delay(300);
 }
