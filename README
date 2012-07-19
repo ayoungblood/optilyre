@@ -2,6 +2,9 @@ OptiLyre project software
 
 OptiLyre is an optical musical controller, with other software components for controlling parameters in realtime. This repository provides the source code for these components. You are encouraged to experiment with these components and build your own controller, whether it be for music or photography, whether it involves lasers or wooden sticks.
 
+UPDATE: I have not developed this stuff as much as is proper. Instead I think I will be switching repositories in order to begin on a somewhat different path.
+Also, the use of the identifier "OptiLyre" is no longer valid and no longer makes sense.
+
 Please read the wiki on GitHub for help using/compiling.
 
 Current Suite Revision:

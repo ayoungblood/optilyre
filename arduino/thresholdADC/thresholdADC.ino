@@ -2,7 +2,7 @@
  * Check analog pins, when value is greater than threshold,
  * trigger and inform Processing sketch via serial.
  * The threshold must be able to be set via the Processing sketch.
- * Note that it takes 100 microseconds to read an ADC, so max frequency is 10kHz
+ * Note that it takes 100 microseconds to read an ADC, or so I heard.
  */
 
 int threshold = 512;
